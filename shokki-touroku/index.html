@@ -87,10 +87,6 @@ table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
 th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
 th{color:var(--muted);font-weight:600;white-space:nowrap}
 
-/* チェックリスト */
-ul.check{list-style:none;margin:0;padding:0}
-ul.check li{padding:8px 0 8px 30px;position:relative;border-bottom:1px solid var(--line)}
-ul.check li::before{content:"";position:absolute;left:2px;top:13px;width:16px;height:16px;border:2px solid var(--accent);border-radius:4px}
 
 .top-link{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));width:44px;height:44px;border-radius:50%;
   background:var(--accent);color:#fff;display:grid;place-items:center;text-decoration:none;font-size:20px;
@@ -279,18 +275,6 @@ footer{margin-top:40px;font-size:12px;color:var(--muted);border-top:1px solid va
     </li>
   </ol>
   <div class="note"><b>反映の確認</b><p>送信後、オートレジに新しい食器をかざし、紐づけたアイテムが正しく表示されることを確認してください。</p></div>
-</section>
-
-<!-- まとめ -->
-<section id="check">
-  <h2>最終チェック</h2>
-  <ul class="check">
-    <li>食器番号（食器ID）を確認した</li>
-    <li>食器マスタに食器区分・食器コード・食器名を登録した</li>
-    <li>アイテムの食器区分・食器名を設定した</li>
-    <li>献立（日付 or 定番メニュー）にアイテムを追加して確定した</li>
-    <li>データ送信の結果が ◯ になった</li>
-  </ul>
 </section>
 
 <footer>
